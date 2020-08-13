@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import * as firebase from 'firebase';
 import Vue from 'vue';
 
 import App from './App.vue';
@@ -7,8 +7,7 @@ import router from './router';
 Vue.config.productionTip = false;
 
 let app = '';
-
-  firebase.initializeApp = ({
+ let config = ({
     apiKey: "AIzaSyCk4r4yxlP-9i4qdjJ-9Rd89YnxxLdxpyA",
     authDomain: "vue-firebase-prueba2.firebaseapp.com",
     databaseURL: "https://vue-firebase-prueba2.firebaseio.com",
@@ -18,6 +17,7 @@ let app = '';
   });
   // Inicialize Firebase
 
+  firebase.initializeApp(config);
 firebase.auth().onAuthStateChanged(() => {
 if (!app){
 app = new Vue({
