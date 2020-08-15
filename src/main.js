@@ -10,7 +10,7 @@ let app = '';
  let config = ({
     apiKey: "AIzaSyCk4r4yxlP-9i4qdjJ-9Rd89YnxxLdxpyA",
     authDomain: "vue-firebase-prueba2.firebaseapp.com",
-    databaseURL: "https://vue-firebase-prueba2.firebaseio.com/file/d/1pJLXn4D8sK5OvnvBl3XyaPyNATpwXwjQ/view",
+    databaseURL: "https://vue-firebase-prueba2.firebaseio.com",
     projectId: "vue-firebase-prueba2",
     storageBucket: "vue-firebase-prueba2.appspot.com",
     messagingSenderId: "361327059755",
